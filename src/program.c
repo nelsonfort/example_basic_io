@@ -20,10 +20,22 @@ void loop(void)
         if (!digitalRead(ins[i])) {
             digitalWrite(outs[i], HIGH);
         } else {
-            digitalWrite(outs[i], HIGH);
-    	    delay(500);
+		
+		digitalWrite(outs[i], HIGH);
+    	    delay(50);
     	    digitalWrite(outs[i], LOW);
-    	    delay(500);
+    	    delay(50);digitalWrite(outs[i], HIGH);
+    	    delay(50);
+    	    digitalWrite(outs[i], LOW);
+    	    delay(50);digitalWrite(outs[i], HIGH);
+    	    delay(50);
+    	    digitalWrite(outs[i], LOW);
+    	    delay(50);
+           for(int jo=0;15;jo++){
+	   digitalWrite(outs[i], HIGH);
+    	    delay(50);
+    	    digitalWrite(outs[i], LOW);
+    	    delay(50);}
         }
 #endif
     }
